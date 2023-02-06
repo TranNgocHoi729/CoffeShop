@@ -5,13 +5,15 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeShop", "CoffeShop\CoffeShop.csproj", "{401EFB92-2DBA-4376-BC09-D22EC38A3410}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{EA7702FD-EC42-4A59-AA4F-81399611A7F3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{DDF2FCB9-A052-42A7-AF46-7A01FF3D85FD}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{93FEA01D-5A9E-4DD6-98AC-42921490150B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EB1C0442-C497-4ED0-981B-2EF8078320EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceAdapter", "InterfaceAdapter", "{4007DAA7-3638-4057-BAF2-AF0D0A340491}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{29096B08-D01C-439D-8675-696DA444F40C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{DB603D25-C124-4DB6-838D-27B8FEC7D6F9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUi", "WebUi", "{EB4B494E-46D6-461A-888D-A4E4062F1EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TNHoi.Domain", "TNHoi.Domain\TNHoi.Domain.csproj", "{DE4FC2A0-D03E-4B5C-A423-905F7175D82D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +25,16 @@ Global
 		{401EFB92-2DBA-4376-BC09-D22EC38A3410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{401EFB92-2DBA-4376-BC09-D22EC38A3410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{401EFB92-2DBA-4376-BC09-D22EC38A3410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4FC2A0-D03E-4B5C-A423-905F7175D82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4FC2A0-D03E-4B5C-A423-905F7175D82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4FC2A0-D03E-4B5C-A423-905F7175D82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4FC2A0-D03E-4B5C-A423-905F7175D82D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE4FC2A0-D03E-4B5C-A423-905F7175D82D} = {DDF2FCB9-A052-42A7-AF46-7A01FF3D85FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FB2709E8-29AA-4520-9056-481E93D92848}
