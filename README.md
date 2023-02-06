@@ -1,1 +1,3 @@
-# CoffeShop
+# CoffeShop BE
+	- Clean Architect
+	- MediatR

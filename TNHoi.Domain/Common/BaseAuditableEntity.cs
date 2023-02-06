@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TNHoi.Domain.Enums;
-
-namespace TNHoi.Domain.Common
+﻿namespace TNHoi.Domain.Common
 {
 	public class BaseAuditableEntity : BaseEntity
 	{

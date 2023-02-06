@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TNHoi.Domain.Common;
-using TNHoi.Domain.Enums;
-
-namespace TNHoi.Domain.Entities
+﻿namespace TNHoi.Domain.Entities
 {
 	public class User : BaseEntity
 	{
