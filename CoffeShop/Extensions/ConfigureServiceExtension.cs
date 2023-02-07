@@ -6,10 +6,7 @@ namespace CoffeShop.Extensions
 	{
 		public static void EntityFrameworkConfiguration(this WebApplicationBuilder builder)
 		{
-			builder.Services.AddSingleton(new DataTypeConfiguration
-			{
-				
-			});
+			builder.Services.AddSingleton();
 		}
 	}
 }
