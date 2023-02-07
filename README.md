@@ -1,4 +1,5 @@
 # CoffeShop BE
+	- Entity Framework Core
 	- Clean Architect
 	- MediatR
 

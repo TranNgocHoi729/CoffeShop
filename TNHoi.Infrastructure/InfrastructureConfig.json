@@ -1,3 +1,13 @@
 {
-  "Database": "SQLServer"
+  "Database": "SQLServer",
+  "EntityFrameworkDataType": {
+    "ShortString": "varchar(50)",
+    "MediumString": "varchar(150)",
+    "LongString": "varchar(255)",
+    "IntType": "int",
+    "TimeType": "datetime2",
+    "BooleanType": "bool",
+    "BitType": "bit",
+    "TextType":  "text"
+  }
 }

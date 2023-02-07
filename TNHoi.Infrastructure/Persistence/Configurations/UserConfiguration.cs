@@ -16,10 +16,10 @@ namespace TNHoi.Infrastructure.Persistence.Configurations
 		public void Configure(EntityTypeBuilder<User> builder)
 		{
 			builder.Property(p => p.Id).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.UserName).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.Password).HasColumnType(_dataType.ShortString);
-			builder.Property(p => p.Email).HasColumnType(_dataType.ShortString);
-			builder.Property(p => p.FullName).HasColumnType(_dataType.LongString);
+			builder.Property(p => p.UserName).HasColumnType(_dataType.LongString).IsRequired();
+			builder.Property(p => p.Password).HasColumnType(_dataType.ShortString).IsRequired();
+			builder.Property(p => p.Email).HasColumnType(_dataType.ShortString).IsRequired();
+			builder.Property(p => p.FullName).HasColumnType(_dataType.LongString).IsRequired();
 			builder.Property(p => p.Phone).HasColumnType(_dataType.ShortString);
 			builder.Property(p => p.Address).HasColumnType(_dataType.LongString);
 			builder.Property(p => p.Gender).HasColumnType(_dataType.IntType);
@@ -28,7 +28,7 @@ namespace TNHoi.Infrastructure.Persistence.Configurations
 			builder.Property(p => p.Created).HasColumnType(_dataType.TimeType);
 			builder.Property(p => p.LastModifiedBy).HasColumnType(_dataType.LongString);
 			builder.Property(p => p.LastModified).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.Status).HasColumnType(_dataType.IntType);
+			builder.Property(p => p.Status).HasColumnType(_dataType.IntType).IsRequired();
 			builder.Property(p => p.Description).HasColumnType(_dataType.LongString);
 			builder.HasKey(key => key.Id);
 		}
