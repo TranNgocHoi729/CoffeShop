@@ -1,6 +1,6 @@
 ﻿namespace TNHoi.Domain.Entities
 {
-	public class User : BaseEntity
+	public class User : BaseAuditableEntity
 	{
 		public string UserName { get; set; }
 
