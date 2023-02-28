@@ -1,4 +1,5 @@
-﻿using TNHoi.Infrastructure.Persistence.Configurations.DataType;
+﻿using TNHoi.Infrastructure.Persistence;
+using TNHoi.Infrastructure.Persistence.Configurations.DataType;
 
 namespace CoffeShop.Extensions
 {
@@ -6,7 +7,7 @@ namespace CoffeShop.Extensions
 	{
 		public static void EntityFrameworkConfiguration(this WebApplicationBuilder builder)
 		{
-			builder.Services.AddSingleton();
+			
 		}
 	}
 }

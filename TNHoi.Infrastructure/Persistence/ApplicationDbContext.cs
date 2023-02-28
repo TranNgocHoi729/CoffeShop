@@ -5,15 +5,13 @@ namespace TNHoi.Infrastructure.Persistence
 {
 	public class ApplicationDbContext : DbContext
 	{
-		private readonly IConfiguration _configuration;
 
-		public ApplicationDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
+		public ApplicationDbContext(DbContextOptions options) : base(options)
 		{
-			_configuration = configuration;
 		}
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(_configuration.GetConnectionString("ConnectionSQL"));
+			//optionsBuilder.UseSqlServer("Server=NGOCHOI;Database=CofeShop;Trusted_Connection=True;");
 		}
 
 	}
