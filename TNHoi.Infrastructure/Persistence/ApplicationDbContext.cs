@@ -11,7 +11,7 @@ namespace TNHoi.Infrastructure.Persistence
 		}
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			//optionsBuilder.UseSqlServer("Server=NGOCHOI;Database=CofeShop;Trusted_Connection=True;");
+			optionsBuilder
 		}
 
 	}

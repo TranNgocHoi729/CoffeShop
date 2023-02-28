@@ -14,23 +14,21 @@ namespace TNHoi.Infrastructure.Persistence.Configurations
 {
 	public class RoleConfiguration : IEntityTypeConfiguration<Role>
 	{
-		private readonly DataTypeConfiguration _dataType;
 
-		public RoleConfiguration(DataTypeConfiguration dataType)
+		public RoleConfiguration()
 		{
-			_dataType = dataType;
 		}
 
 		public void Configure(EntityTypeBuilder<Role> builder)
 		{
-			builder.Property(p => p.Id).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.Name).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.CreatedBy).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.Created).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.LastModifiedBy).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.LastModified).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.Status).HasColumnType(_dataType.IntType);
-			builder.Property(p => p.Description).HasColumnType(_dataType.LongString);
+			builder.Property(p => p.Id).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.Name).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.CreatedBy).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.Created).HasColumnType(DataTypeConfiguration.TimeType);
+			builder.Property(p => p.LastModifiedBy).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.LastModified).HasColumnType(DataTypeConfiguration.TimeType);
+			builder.Property(p => p.Status).HasColumnType(DataTypeConfiguration.IntType);
+			builder.Property(p => p.Description).HasColumnType(DataTypeConfiguration.LongString);
 			builder.HasKey(key => key.Id);
 		}
 	}

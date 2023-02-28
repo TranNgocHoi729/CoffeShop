@@ -1,21 +1,21 @@
 ﻿namespace TNHoi.Infrastructure.Persistence.Configurations.DataType
 {
-	public class DataTypeConfiguration
+	internal class DataTypeConfiguration
 	{
-		internal string ShortString;
+		internal const string ShortString = "nvarchar(50)";
 
-		internal string MediumString;
+		internal const string MediumString = "nvarchar(150)";
 
-		internal string LongString;
+		internal const string LongString = "varchar(255)";
 
-		internal string IntType;
+		internal const string IntType = "int";
 
-		internal string TimeType;
+		internal const string TimeType = "datetime2";
 
-		internal string BooleanType;
+		internal const string BooleanType = "bool";
 
-		internal string BitType;
+		internal const string BitType = "bit";
 
-		internal string TextType;
+		internal const string TextType = "text";
 	}
 }

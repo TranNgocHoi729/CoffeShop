@@ -7,29 +7,26 @@ namespace TNHoi.Infrastructure.Persistence.Configurations
 {
 	public class UserConfiguration : IEntityTypeConfiguration<User>
 	{
-		private readonly DataTypeConfiguration _dataType;
-
-		public UserConfiguration(DataTypeConfiguration dataType)
+		public UserConfiguration()
 		{
-			_dataType = dataType;
 		}
 		public void Configure(EntityTypeBuilder<User> builder)
 		{
-			builder.Property(p => p.Id).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.UserName).HasColumnType(_dataType.LongString).IsRequired();
-			builder.Property(p => p.Password).HasColumnType(_dataType.ShortString).IsRequired();
-			builder.Property(p => p.Email).HasColumnType(_dataType.ShortString).IsRequired();
-			builder.Property(p => p.FullName).HasColumnType(_dataType.LongString).IsRequired();
-			builder.Property(p => p.Phone).HasColumnType(_dataType.ShortString);
-			builder.Property(p => p.Address).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.Gender).HasColumnType(_dataType.IntType);
-			builder.Property(p => p.DateOfBirth).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.CreatedBy).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.Created).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.LastModifiedBy).HasColumnType(_dataType.LongString);
-			builder.Property(p => p.LastModified).HasColumnType(_dataType.TimeType);
-			builder.Property(p => p.Status).HasColumnType(_dataType.IntType).IsRequired();
-			builder.Property(p => p.Description).HasColumnType(_dataType.LongString);
+			builder.Property(p => p.Id).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.UserName).HasColumnType(DataTypeConfiguration.LongString).IsRequired();
+			builder.Property(p => p.Password).HasColumnType(DataTypeConfiguration.ShortString).IsRequired();
+			builder.Property(p => p.Email).HasColumnType(DataTypeConfiguration.ShortString).IsRequired();
+			builder.Property(p => p.FullName).HasColumnType(DataTypeConfiguration.LongString).IsRequired();
+			builder.Property(p => p.Phone).HasColumnType(DataTypeConfiguration.ShortString);
+			builder.Property(p => p.Address).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.Gender).HasColumnType(DataTypeConfiguration.IntType);
+			builder.Property(p => p.DateOfBirth).HasColumnType(DataTypeConfiguration.TimeType);
+			builder.Property(p => p.CreatedBy).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.Created).HasColumnType(DataTypeConfiguration.TimeType);
+			builder.Property(p => p.LastModifiedBy).HasColumnType(DataTypeConfiguration.LongString);
+			builder.Property(p => p.LastModified).HasColumnType(DataTypeConfiguration.TimeType);
+			builder.Property(p => p.Status).HasColumnType(DataTypeConfiguration.IntType).IsRequired();
+			builder.Property(p => p.Description).HasColumnType(DataTypeConfiguration.LongString);
 			builder.HasKey(key => key.Id);
 		}
 	}

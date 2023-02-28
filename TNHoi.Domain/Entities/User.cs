@@ -17,7 +17,5 @@
 		public Gender Gender { get; set; } = Gender.MALE;
 
 		public DateTime? DateOfBirth { get; set; }
-
-
 	}
 }
